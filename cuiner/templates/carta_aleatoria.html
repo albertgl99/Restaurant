@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8 bg-white dark:bg-gray-800">
+    <h1 class="text-center font-bold text-4xl mt-4 mb-8 dark:text-white">Carta Aleatòria</h1>
+    
+    <!-- Primers -->
+    <h2 class="text-white text-center text-xl font-bold mb-4">Primers</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for plat in primers %}
+            <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-600 dark:border-gray-700">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ plat.nom }}</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ plat.descripcio }} <br> Preu: {{ plat.preu }}€</p>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- Segons -->
+    <h2 class="text-white text-center text-xl font-bold mb-4">Segons</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for plat in segons %}
+            <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-600 dark:border-gray-700">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ plat.nom }}</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ plat.descripcio }} <br> Preu: {{ plat.preu }}€</p>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- Postres -->
+    <h2 class="text-white text-center text-xl font-bold mb-4">Postres</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for plat in postres %}
+            <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-600 dark:border-gray-700">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ plat.nom }}</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ plat.descripcio }} <br> Preu: {{ plat.preu }}€</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

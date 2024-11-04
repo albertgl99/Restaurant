@@ -1,0 +1,18 @@
+<!-- modificar_plat.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Modificar Plat</h2>
+<form method="post">
+    {% csrf_token %}
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom" value="{{ plat.nom }}" required><br>
+    <label for="categoria">Categoria:</label>
+    <input type="text" id="categoria" name="categoria" value="{{ plat.categoria }}" required><br>
+    <label for="preu">Preu:</label>
+    <input type="number" id="preu" name="preu" value="{{ plat.preu }}" step="any" required><br>
+    <label for="descripcio">Descripció:</label>
+    <textarea id="descripcio" name="descripcio" required>{{ plat.descripcio }}</textarea><br>
+    <button type="submit">Modificar</button>
+</form>
+{% endblock %}

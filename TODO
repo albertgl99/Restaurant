@@ -1,0 +1,16 @@
+Implementar en DJANGO l'aplicació del restaurant, només la part del rôle del cuiner. 
+Podeu fer el frontend amb bootstrap o similar i fer peticions ajax (amb fetch) al back-end de DJANGO. 
+Seria interessant que implementeu la gestió de rôles (tot i que és optatiu). 
+
+Lliurament:
+
+ - Base de Dades
+ - Codi Funcional Degudament comentat
+ - Vídeo demostratiu/explicatiu de l'aplicació web
+
+Crear un plat per la carta (que pot ser un primer, segon o postres), té un nom i una petita descripció, i un preu.
+Modificar un plat 
+Eliminar un plat
+Crear la carta de la setmana, escollint 3 primers, 3 segons i 3 postres
+Crear la carta de manera escollint 3 primers, 3 segons i 3 postres aleatòriament entre les diferents opcions que hi ha
+
